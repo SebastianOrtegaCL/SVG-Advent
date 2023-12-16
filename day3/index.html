@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3: How to Make a Gingerbread Figure with SVG</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        .box{
+            border: 1px dotted black;
+        }
+        .limb {
+            stroke: #cd803d;
+            stroke-width: 35px;
+            stroke-linecap: round;
+        }
+        .mouth {
+            fill: none;
+            stroke: white;
+            stroke-width: 2px;
+        }
+        .button{
+            fill: black;
+        }
+        .eyes {
+            fill: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>How to Make a Gingerbread Figure with SVG
+    </h1>
+    <svg
+        class="box"
+        width="200"
+        height="200"    
+        viewBox="-100 -100 200 200"
+        fill="brown"
+    >
+        <circle 
+            cx="0"
+            cy="-50"
+            r="30"
+            fill="#cd803d"
+        />
+        <line
+            class="limb"
+            x1="-40"
+            y1="-10"
+            x2="40"
+            y2="-10"
+        />
+        <line
+            class="limb"
+            x1="25"
+            y1="50"
+            x2="0"
+            y2="-15"
+        />
+        <line
+            class="limb"
+            x1="-25"
+            y1="50"
+            x2="0"
+            y2="-15"
+        />
+        <rect
+            class="mouth"
+            x="-10"
+            y="-40"
+            width="20"
+            height="5"
+            rx="2"
+        />
+        <circle
+            class="button"
+            cx="0"
+            cy="-10"
+            r="5"
+        />
+        <circle
+            class="button"
+            cx="0"
+            cy="10"
+            r="5"
+        />
+        <circle
+            class="eyes"
+            cx="10"
+            cy="-55"
+            r="3"
+        />
+        <circle
+            class="eyes"
+            cx="-10"
+            cy="-55"
+            r="3"
+        />
+    </svg>
+
+</body>
+</html>
